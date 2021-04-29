@@ -1,0 +1,52 @@
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid black;
+}
+.clearfix {
+    overflow: auto;
+}
+
+.topnav {
+    display:flex;
+    background-color: black;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+.flex-nav-left {
+    display:flex;
+    width:90%;
+    flex-direction: row;
+}
+.flex-nav-right {
+    display:flex;
+    flex-direction:row;
+    width:10%;
+}
+
+
+.container {
+    border: 1px solid black;
+}
+
+.leftcolumn {
+    border: 1px solid black;
+}
+
+.card {
+    border: 1px solid black;
+}
+
+.fakeimg {
+    border: 1px solid black;
+}
+
+.rightcolumn {
+    border: 1px solid black;
+}
+.footer {
+    border: 1px solid black;
+}
