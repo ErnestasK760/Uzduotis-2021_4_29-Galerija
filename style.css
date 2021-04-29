@@ -28,7 +28,11 @@
 }
 
 
-.container {
+.grid-container > div {
+    background:#eee;
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 50% 50%;
     border: 1px solid black;
 }
 
