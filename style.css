@@ -37,7 +37,7 @@ a {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     font-family: 'Roboto', sans-serif;
     font-size: 1.5625rem;
 }
@@ -51,51 +51,57 @@ a {
     display: grid;
     grid-template-columns: 2fr, 1fr;
     grid-gap: 30px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
-
+.grid-container p {
+    padding-left: 10px;
+}
 .grid-item {
     background-color: white;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 .grid-item-1 {
+    padding: 10px;
     grid-row: 1 / span 1;
     grid-column: 1 / span 3;
     font-family: 'Roboto', sans-serif;
 }
 
 .grid-item-2 {
+    padding: 10px;
     grid-row: 2 / span 2;
     grid-column: 1 / span 3;
     font-family: 'Roboto', sans-serif;
 }
 .grid-flexitem-3 {
+    padding: 5px;
     background-color: white;
     grid-row: 1 / span 2;
     grid-column: 4 / span 2;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     font-family: 'Roboto', sans-serif;
 
 }
 .flex-container {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 .grid-item-3 {
     font-family: 'Roboto', sans-serif;
-    border:1px solid black;
+    /* border:1px solid black; */
 }
 .grid-item-4 {
     font-family: 'Roboto', sans-serif;
-    border:1px solid black;
+    /* border:1px solid black; */
 }
 .grid-item-5 {
     font-family: 'Roboto', sans-serif;
-    border:1px solid black;
+    /* border:1px solid black; */
 }
 .pic-card {
     padding: 10px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 .realimg-right {
     max-width: 100%;
@@ -107,7 +113,7 @@ a {
 .footer {
     display:flex;
     text-align:center;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     font-family: 'Roboto', sans-serif;
     flex-direction: column;
 }
@@ -149,6 +155,7 @@ a {
     padding: 22px;
     color: white;
     text-transform: uppercase;
+    margin-right: 60px;
 }
 
 .navbar > .list > .item {
@@ -158,7 +165,7 @@ a {
     padding-right: 22px;
     text-transform: uppercase;
     color: white;
-    font-size: 0.875rem;
+    font-size: 1rem;
 }
 .navbar > .block > .item.-link{
     color:white;
@@ -208,4 +215,31 @@ a {
 .navbar > .toggle {
     position: relative;
     display: none;
+}
+
+@media all and (max-width: 720px) {
+
+    html {
+
+        font-size: 13px;
+    }
+    .grid-item-1 {
+        grid-row: 1 / span 1;
+        grid-column: 1 / span 6;
+    }
+
+    .grid-item-2 {
+        grid-row: 2 / span 1;
+        grid-column: 1 / span 6;
+
+    }
+    .grid-flexitem-3 {
+        grid-row: 3 / span 1;
+        grid-column: 1 / span 6;
+        
+    }
+    .grid-container {
+        grid-gap: 20px;
+    }
+    
 }
