@@ -1,8 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 html {
-    font-size: 25px;
+    font-size: 16px;
 }
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+}
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.17rem;
+}
+h5 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.83rem;
+}
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+a {
+    font-family: 'Roboto', sans-serif;
+}
+
 * {
     box-sizing: border-box;
   }
@@ -19,31 +39,14 @@ html {
     flex-direction: column;
     border: 1px solid black;
     font-family: 'Roboto', sans-serif;
+    font-size: 1.5625rem;
 }
 .clearfix {
     overflow: auto;
 }
 
-.topnav {
-    display:flex;
-    background-color: black;
-    border: 1px solid black;
-    box-sizing: border-box;
-}
-.flex-nav-left {
-    display:flex;
-    width:80%;
-    flex-direction: row;
-}
-.flex-nav-right {
-    display:flex;
-    flex-direction:row;
-    width:20%;
-}
-
-
 .grid-container {
-    background:#eee;
+    background-color:#f1f1f1;
     padding: 1em;
     display: grid;
     grid-template-columns: 2fr, 1fr;
@@ -52,24 +55,27 @@ html {
 }
 
 .grid-item {
+    background-color: white;
     border: 1px solid black;
 }
 .grid-item-1 {
     grid-row: 1 / span 1;
-    grid-column: 1 / span 1;
+    grid-column: 1 / span 3;
     font-family: 'Roboto', sans-serif;
 }
 
 .grid-item-2 {
-    grid-row: 2 / span 1;
-    grid-column: 1 / span 1;
+    grid-row: 2 / span 2;
+    grid-column: 1 / span 3;
     font-family: 'Roboto', sans-serif;
 }
 .grid-flexitem-3 {
-    grid-row: 1 / span 3;
-    grid-column: 2 / span 2;
+    background-color: white;
+    grid-row: 1 / span 2;
+    grid-column: 4 / span 2;
     border: 1px solid black;
     font-family: 'Roboto', sans-serif;
+
 }
 .flex-container {
     display: flex;
@@ -87,30 +93,119 @@ html {
     font-family: 'Roboto', sans-serif;
     border:1px solid black;
 }
-
-/* .grid-item-3 {
-    grid-row: 1 / span 1;
-    grid-column: 3 / span 1;
-}
-.grid-item-4 {
-    grid-row: 2 / span 1;
-    grid-column: 3 / span 1;
-}
-.grid-item-5{
-    grid-row: 3 / span 1;
-    grid-column: 3 / span 1;
-} */
-
 .pic-card {
+    padding: 10px;
     border: 1px solid black;
 }
-.realimg {
-    width: 30em;
-    height: 15em;
+.realimg-right {
+    max-width: 100%;
 
+}
+.realimg-left {
+    max-width: 100%;
 }
 .footer {
     display:flex;
-    justify-content: center;
+    text-align:center;
     border: 1px solid black;
+    font-family: 'Roboto', sans-serif;
+    flex-direction: column;
+}
+.footer p,h2 {
+    margin: 10px;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.area {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+}
+
+.navbar-component {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.16), 0 2px 10px rgba(0,0,0,0.12);
+}
+
+.navbar-component > .navbar {
+    justify-content: space-between;
+}
+
+.navbar > .block > .item.-link {
+    display: block;
+    font-size: 1rem;
+    padding: 22px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.navbar > .list > .item {
+    height: 64px;
+    line-height: 64px;
+    padding-left: 22px;
+    padding-right: 22px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 0.875rem;
+}
+.navbar > .block > .item.-link{
+    color:white;
+}
+
+.navbar > .list > .item.-link {
+    line-height: 64px;
+    color: white;
+    display: inline-block;
+    margin:0;
+
+}
+
+.navbar > .list > .item.-link:hover {
+    color:black;
+    background-color: lightgray;
+}
+
+.navbar > .block > .item.-link:hover {
+    color:black;
+    background-color: lightgray;
+}
+
+
+.navbar > .toggle > .icon,
+.navbar > .toggle > .icon:before,
+.navbar > .toggle > .icon::after
+{
+    display: block;
+    width: 24px;
+    height: 3px;
+    background-color: #555555
+
+}
+.navbar > .toggle > .icon:before,
+.navbar > .toggle > .icon::after {
+    position: absolute;
+    content: "";
+}
+.navbar > .toggle > .icon:before {
+    top: 22px;
+}
+.navbar > .toggle > .icon:after {
+    top: 40px;
+}
+
+.navbar > .toggle {
+    position: relative;
+    display: none;
 }

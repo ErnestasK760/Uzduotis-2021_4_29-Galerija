@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My website</title>
     <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -21,23 +21,27 @@
 
         </div>
 
-        <div class="topnav">
+        <div class="container"></div>
+            <div class="navbar-component">
+             <div class="navbar area">
+                <nav id="navigation" class="list">
+                    <a href="#" class="item -link">Pagrindinis</a>
+                    <a href="#" class="item -link">Projektai</a>
+                    <a href="#" class="item -link">Apie mus</a>
+                    <span class="item">
+                        <i class="fa fa-search"></i>
+                    </span>
+                </nav>
+                <div class="block">
+                    <a href="#" class="item -link">Įmonė</a>
+                 </div>
 
-            <ul class='flex-nav-left'>
-                
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-            </ul>
+                <button class="toggle">
+                    <span class="icon"></span>
+                </button>
 
-            <ul class='flex-nav-right'>
-                <li class="flex-push">
-                    <a href="#">Link</a>
-                </li>
-            </ul>
-
+            </div>
         </div>
-
         <div class="grid-container">
 
             <div class="grid-item-1 grid-item">
@@ -46,7 +50,7 @@
 
                 <h5>Title description, Dec 7, 2017</h5>
 
-                <div classs="pic-card"><img class="realimg" src="http://getwallpapers.com/wallpaper/full/5/5/2/1028867-winter-nature-wallpaper-2560x1600-high-resolution.jpg" rel="nature-pic"></div>
+                <div class="pic-card"><img class="realimg-left" src="https://cdn.wallpapersafari.com/66/45/3RcPI1.jpg" rel="nature-pic"></div>
 
                 <p>Some text..</p>
 
@@ -55,13 +59,13 @@
 
             </div>
 
-            <div class="grid-item-2 grid-item">
+            <div class="grid-item-2 grid-item clearfix">
 
                 <h2>TITLE HEADING</h2>
 
                 <h5>Title description, Sep 2, 2017</h5>
 
-                <div class="pic-card"><img class="realimg" src="https://images6.alphacoders.com/338/thumb-1920-338596.jpg"></div>
+                <div class="pic-card"><img class="realimg-left" src="https://images6.alphacoders.com/338/thumb-1920-338596.jpg"></div>
                 <p>Some text..</p>
                 <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
 
@@ -75,7 +79,7 @@
 
                         <h2>About Me</h2>
 
-                        <div class="realimg">Image</div>
+                        <div class="pic-card"><img class="realimg-right" src="http://getwallpapers.com/wallpaper/full/5/5/2/1028867-winter-nature-wallpaper-2560x1600-high-resolution.jpg"></div>
                         <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
 
                     </div>
@@ -84,9 +88,9 @@
 
                         <h3>Popular Post</h3>
 
-                        <div class="realimg"><p>Image</p></div>
-                        <div class="realimg"><p>Image</p></div>
-                        <div class="realimg"><p>Image</p></div>
+                        <div class="pic-card"><img class="realimg-right" src="https://goldwallpapers.com/uploads/posts/high-resolution-hd-nature-wallpapers/high_resolution_hd_nature_wallpapers_029.jpg"></div>
+                        <div class="pic-card"><img class="realimg-right" src="https://4kwallpaper.wiki/wp-content/uploads/2019/09/160960.jpg"></div>
+                        <div class="pic-card"><img class="realimg-right" src="https://i.pinimg.com/originals/54/a0/8f/54a08f440ac87229c787c4a7d4d7c2e1.jpg"></div>
 
                     </div>
 
@@ -103,12 +107,19 @@
         </div>
             <div class="footer">
 
-                <h2>Footer</h2>
+                <h2>&#169 Ernestas Kapustinskas </h2>
+                <p>
+                <script>
+                    document.write(new Date().getFullYear())
+                </script>
+                </p>
+                 
 
             </div>
 
            
 </div>
+
 
 </body>
 
